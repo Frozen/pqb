@@ -6,7 +6,7 @@ extern crate syn;
 
 //use syn::Ident;
 use syn::Body;
-use syn::VariantData;
+//use syn::VariantData;
 //use syn::Ty;
 
 use proc_macro::TokenStream;
@@ -31,8 +31,8 @@ fn impl_model(ast: &syn::DeriveInput) -> quote::Tokens {
 
     let mut out = vec![];
     match ast.body {
-        Body::Struct(ref variantData) => {
-            let x = variantData.fields();
+        Body::Struct(ref variant_data) => {
+            let x = variant_data.fields();
             for field in x {
                 if let Some(ref ident) = field.ident {
                     out.push(ident.clone());

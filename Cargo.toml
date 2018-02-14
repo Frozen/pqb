@@ -11,16 +11,13 @@ members = [
     ]
 
 
-
-
 [dependencies]
-#use chrono::prelude::*;
-chrono = "*"
+#chrono = "*"
 pqb = {path = "pqb"}
 pqb_codegen = {path = "pqb_codegen"}
-postgres = "*"
+postgres = "0.15.2"
 log = "0.3"
 
 
-[replace]
-"pqb:0.1.0" = { path = "pqb" }
+#[replace]
+#"pqb:0.1.0" = { path = "pqb" }
