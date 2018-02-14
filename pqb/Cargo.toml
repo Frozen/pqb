@@ -1,0 +1,19 @@
+[package]
+name = "pqb"
+version = "0.1.0"
+authors = ["Konstantin <phpconf@gmail.com>"]
+
+
+
+
+#
+#[lib]
+#proc-macro = true
+#
+#
+[dependencies]
+postgres = "0.15"
+log = "0.3"
+env_logger = "0.4.3"
+#syn = "0.11.11"
+#quote = "0.3.15"
