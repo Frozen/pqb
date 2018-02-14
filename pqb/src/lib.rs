@@ -352,6 +352,7 @@ mod test {
     #[test]
     fn test_convert_table_name() {
         assert_eq!("my_table_name", super::convert_table_name("MyTableName"));
+        assert_eq!("user", super::convert_table_name("User"));
     }
 
 }
